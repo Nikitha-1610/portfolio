@@ -189,7 +189,7 @@ return (
 <HorizontalLine />
 
 {/* TRANSFORMATION */}
-<section className="bg-black text-white flex flex-col items-center p-10 relative h-auto sm:h-screen ">
+<section className="bg-black text-white flex flex-col items-center p-20  relative h-auto sm:h-screen ">
   {/* Background Glow */}
   <div className="absolute  bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
   <div className="relative z-10 w-full">
@@ -236,9 +236,11 @@ return (
 
 
 
-{/*MOBILE DEVELOPMENT*/}
 
-<HorizontalLine />
+
+
+
+{/*MOBILE DEVELOPMENT*/}
 
 <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[350px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
@@ -313,14 +315,13 @@ return (
 
 
 
-<p className="text-center text-neutral-500 text-[24px] px-[50px] leading-10 max-w-[1300px] mx-auto mt-9 p-10">
-        Our mobile app development process begins with understanding your unique requirements, target audience, and
-        business objectives to establish a strong foundation. We then craft intuitive user interfaces and develop feature-
-        rich, scalable mobile applications tailored to your vision. Through rigorous quality assurance, we ensure seamless
-        functionality, exceptional performance, and a flawless user experience. Finally, we deploy your app to app stores
-        and provide continuous updates and support to keep it optimized and competitive in the ever-evolving digital landscape.
-      </p>
-
+<p className="text-center text-neutral-500 text-[18px] sm:text-[20px] md:text-[24px] px-6 sm:px-8 md:px-[50px] leading-8 sm:leading-9 md:leading-10 max-w-[90%] sm:max-w-[1100px] md:max-w-[1300px] mx-auto mt-6 sm:mt-8 md:mt-9 p-6 sm:p-8 md:p-10">
+  Our mobile app development process begins with understanding your unique requirements, target audience, and
+  business objectives to establish a strong foundation. We then craft intuitive user interfaces and develop feature-
+  rich, scalable mobile applications tailored to your vision. Through rigorous quality assurance, we ensure seamless
+  functionality, exceptional performance, and a flawless user experience. Finally, we deploy your app to app stores
+  and provide continuous updates and support to keep it optimized and competitive in the ever-evolving digital landscape.
+</p>
 
 {/*WEB DEVELOPMENT*/}
 
@@ -400,13 +401,13 @@ return (
 
 
 
-      <p className="text-center text-neutral-500 text-[24px] px-[50px] leading-[40px] max-w-[1300px] mx-auto mt-9">
-        Our web development process starts with a deep understanding of your goals, audience, and business needs to
-        create a solid blueprint for success. We design and build responsive, visually appealing, and highly functional
-        websites tailored to your vision. Rigorous testing ensures seamless performance, cross-browser compatibility, and
-        a flawless user experience. Once launched, we offer continuous updates and support to keep your website secure,
-        optimized, and aligned with the latest industry trends.
-      </p>
+<p className="text-center text-neutral-500 text-[18px] sm:text-[20px] md:text-[24px] px-6 sm:px-8 md:px-[50px] p-6 sm:p-8 md:p-10 leading-[30px] sm:leading-[35px] md:leading-[40px] max-w-[90%] sm:max-w-[1100px] md:max-w-[1300px] mx-auto mt-6 sm:mt-8 md:mt-9">
+  Our web development process starts with a deep understanding of your goals, audience, and business needs to
+  create a solid blueprint for success. We design and build responsive, visually appealing, and highly functional
+  websites tailored to your vision. Rigorous testing ensures seamless performance, cross-browser compatibility, and
+  a flawless user experience. Once launched, we offer continuous updates and support to keep your website secure,
+  optimized, and aligned with the latest industry trends.
+</p>
 
     </>
   );

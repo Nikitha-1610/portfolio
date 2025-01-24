@@ -166,7 +166,7 @@ return (
 
 
           
-<p className="text-center text-gray-500 text-3xl px-10 leading-10 max-w-[1300px] mx-auto mt-20 p-12">
+    <p className="text-center text-gray-500 text-xl sm:text-xl md:text-2xl px-4 sm:px-8 md:px-5 leading-8 sm:leading-9 md:leading-10 max-w-[90%] sm:max-w-[full] md:max-w-full mx-auto mt-12 sm:mt-16 md:mt-10 p-6 sm:p-8 md:p-8">
   We specialize in developing products that not only meet user needs but exceed their expectations. With a
   perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, we craft
   solutions that people genuinely love to use. Our goal is to create experiences that are intuitive,
@@ -229,7 +229,10 @@ return (
 </div>
 
 </div>
-</div></>
+</div>
+
+
+</>
     
   );
 };

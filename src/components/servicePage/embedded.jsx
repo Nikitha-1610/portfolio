@@ -1,12 +1,30 @@
 const EmbeddedSystems = () => {
+
+
+  const HorizontalLine = () => {
+    return (
+      <div className="w-full flex justify-center">
+      
+        <div className="w-full max-w-screen-2xl mx-auto px-10">
+          <hr className="border-[1px] border-gray-300" />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
-      <h1 className="text-glow2 text-[50px] font-bold text-gray-100 mb-4 flex flex-row mt-[100px] justify-center"><span className="text-[#fe5d26] underline">E</span>mbedded Services</h1>
-      <img 
-        className="h-auto max-w-full rounded-xl mt-16 mx-auto" 
-        src='/assets/images/emb.svg' 
-        alt="Embedded Service" 
-      />
+      <div className="text-center mt-9">
+  <h1 className="text-glow text-[32px] sm:text-[40px] md:text-[50px] font-bold text-gray-100 mb-4 flex items-center justify-center">
+    <span className="text-[#fe5d26] underline mr-1">E</span>mbedded Services
+  </h1>
+  <img
+    className="h-auto  sm:max-w-[80%] md:max-w-[70%] lg:max-w-[100%] rounded-xl mt-8 mx-auto"
+    src="/assets/images/emb.svg"
+    alt="Embedded Service"
+  />
+</div>
+
 
 <div class="bg-black text-white py-10 px-4">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto">
@@ -90,31 +108,32 @@ const EmbeddedSystems = () => {
   </div>
 </div>
       
-<div className="flex flex-col lg:flex-row items-center justify-between w-full p-6 bg-black text-white my-12 space-y-0 lg:space-y-0">
+<div className="flex flex-col lg:flex-row items-start justify-start w-full p-6 sm:p-8 md:p-10 bg-black text-white my-12 gap-6">
   <img 
     src="/assets/images/hex.svg" 
     alt="IoT Solutions" 
-    className="w-full lg:w-[600px] h-auto lg:h-[591.43px] border-neutral-600 border-[1.22px] gap-[12.26px] rounded-xl mb-0 lg:mb-0 lg:mr-9" 
+    className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:w-[600px] h-auto border-neutral-600 border rounded-xl"
   />
 
-  <div className="text-left w-full lg:w-[400px] font-light lg:ml-0">  
-    <ul className="list-disc text-[26px] leading-[61px] marker:text-orange-600 pl-4 lg:pl-0">
-      <li><span className="text-orange-500 ">C</span>ustomized Embedded Solutions</li>
-      <li><span className="text-orange-500 ">R</span>eal-Time Processing</li>
-      <li><span className="text-orange-500 ">S</span>eamless Hardware Integration</li>
-      <li><span className="text-orange-500 ">L</span>ow Power Consumption</li>
-      <li><span className="text-orange-500 ">S</span>calable and Secure Architectures</li>
+  <div className="text-left w-full lg:max-w-[400px] font-light lg:ml-20 lg:mt-20">
+    <ul className="list-disc text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[30px] sm:leading-[40px] md:leading-[50px] lg:leading-[61px] marker:text-orange-600 pl-6 sm:pl-8 lg:pl-0">
+      <li><span className="text-orange-500">C</span>ustomized Embedded Solutions</li>
+      <li><span className="text-orange-500">R</span>eal-Time Processing</li>
+      <li><span className="text-orange-500">S</span>eamless Hardware Integration</li>
+      <li><span className="text-orange-500">L</span>ow Power Consumption</li>
+      <li><span className="text-orange-500">S</span>calable and Secure Architectures</li>
     </ul>
   </div>
 </div>
 
-      <p className="text-center text-neutral-600 text-[32px] px-[50px] leading-[43px] max-w-[1300px] mx-auto mt-9">
-        At the heart of technological innovation lies embedded systems, seamlessly <br />
-        <span className='text-white'>integrating software</span> and hardware to power modern devices and solutions. Our <br />
-        embedded services are designed to provide <span className='text-white'>robust, efficient</span>, and <span className='text-white'>scalable systems</span> <br />
-        tailored to your unique needs, ensuring your business stays ahead in today’s <br />
-        competitive landscape.
-      </p>
+<p className="text-center text-neutral-600 text-[20px] pb-8 sm:text-[24px] md:text-[28px] lg:text-[32px] px-4 sm:px-6 md:px-8 lg:px-12 leading-[30px] sm:leading-[35px] md:leading-[40px] lg:leading-[43px] max-w-full lg:max-w-[1300px] mx-auto mt-6 sm:mt-8 lg:mt-5">
+  At the heart of technological innovation lies embedded systems, seamlessly 
+  <span className="text-white">integrating software</span> and hardware to power modern devices and solutions. Our 
+  embedded services are designed to provide <span className="text-white">robust, efficient</span>, and <span className="text-white">scalable systems</span> 
+  tailored to your unique needs, ensuring your business stays ahead in today’s 
+  competitive landscape.
+</p>
+<HorizontalLine/>
     </>
   );
 }

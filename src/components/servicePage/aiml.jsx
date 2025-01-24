@@ -1,11 +1,38 @@
+
+
 const AimlServices = () => {
+
+  const HorizontalLine = () => {
+    return (
+      <div className="w-full flex justify-center">
+        {/* Adjust the width and padding */}
+        <div className="w-full max-w-screen-2xl mx-auto px-10">
+          <hr className="border-[1px] border-gray-300" />
+        </div>
+      </div>
+    );
+  };
   return (
     <>
-      <h1 className=" text-glow text-[50px] font-bold text-gray-100 mb-4 flex flex-row mt-[147px] h-[47px]"><h1 className="text-[#fe5d26] underline">AI/ML</h1> Services</h1>
-  <img src="/assets/images/ai.svg" alt="aiml" class="w-[1471px] h-[830.34px] t-[9492px] l-[-22px] align-middle"/>
+    <HorizontalLine />
+      <h1 className=" text-glow text-[50px] font-bold text-gray-100 mb-4 flex flex-row mt-9 h-[47px]"><h1 className="text-[#fe5d26] underline">AI/ML</h1> Services</h1>
+      <div class="flex flex-col  md:flex-col lg:flex-row items-center md:items-start space-y-6  md:space-y-0 md:space-x-8 p-4 ml-6  md:ml-10 mt-12 mb-12 md:mr-20">
+  {/* Image on the Left */}
+  <img
+    src="/assets/images/ai.svg"
+    alt="aiml"
+    class="w-full max-w-[90%]  md:w-[100%] md:max-w-[721px] md:h-[481px] lg:w-[50%] lg:max-w-[721px] lg:h-[481px] md:p-8 object-cover"
+  />
 
-
-  <div className="relative h-auto w-[1218px] flex flex-col items-center bg-[#1E1E1E] text-white py-8 px-6">
+  {/* Paragraph on the Right */}
+  <p class="text-left text-white font-segoe font-light text-[18px] leading-[26px]  md:text-[20px] md:leading-[38px] lg:text-[24px] lg:leading-[38px] max-w-full md:max-w-[100%] px-4 md:px-10 md:p-10 md:mt-auto lg:mt-auto mt-4">
+    Our team offers end-to-end AI/ML solutions designed to drive business growth, 
+    improve efficiency, and deliver exceptional customer experiences. 
+    We create custom, scalable AI systems to help you stay competitive 
+    in today’s fast-evolving market.
+  </p>
+</div>
+  <div className="relative h-auto lg:w-[1218px] md:w-full flex flex-col items-center bg-[#1E1E1E] text-white py-8 px-6">
   <div className="text-center mb-8">
     <h2 className="max-w-[1026px] text-[#9C9C9C] text-[20px] font-normal leading-[26.6px] md:text-[24px] lg:text-[28px]">
       AI/ML Solutions
@@ -72,13 +99,13 @@ const AimlServices = () => {
 </div>
 
 
-<h1 className="text-neutral-400 font-segoe text-[30px] font-normal text-center p-10 md:text-[36px] lg:text-[40px]">
+<h1 className="text-neutral-400 font-segoe text-[24px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-normal text-center px-6 sm:px-8 md:px-10 py-6 sm:py-8 md:py-10">
   Transformative Power: Harness AI and ML to stay ahead in an ever-evolving digital landscape
 </h1>
 
 <div className="flex flex-col gap-y-[40px]">
   {/* First Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px] px-5 md:px-10">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px] px-5 md:px-10 ">
     <img src="/assets/images/AI (1).svg" alt="ai" className="w-full sm:w-[500px] h-[332.58px] mx-auto" />
     <img src="/assets/images/AI (2).svg" alt="ai" className="w-full sm:w-[500px] h-[332.58px] mx-auto" />
   </div>
@@ -89,18 +116,31 @@ const AimlServices = () => {
     <img src="/assets/images/AI (4).svg" alt="ai" className="w-full sm:w-[500px] h-[332.58px] mx-auto" />
   </div>
 </div>
-  <div classname="w-[1204px] h-[215px] t-[11774px] l-[38px] ">
-<p className=" text-neutral-400 font-segoe text-[24px] font-normal leading-[43px] text-center p-40">We harness the transformative power of Artificial Intelligence (AI) and Machine<span className='text-white'> Learning (ML)</span> to help businesses <br/>stay ahead in an ever-evolving digital landscape. Our AI/ML solutions are designed to <span className='text-white'>automate processes</span>,<br/> enhance decision-making, and unlock hidden opportunities within your data. From predictive analytics to natural<br/> language processing and computer vision, we tailor our services to solve real-world challenges and <span className='text-white'> drive <br/>measurable results</span>.</p>
+<div className="w-full max-w-[1304px] h-auto mx-auto px-4 sm:px-6 md:px-8 lg:px-10 mt-10">
+  <p className="text-neutral-400 font-segoe text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-normal leading-[30px] sm:leading-[35px] md:leading-[40px] lg:leading-[43px] text-center p-4 sm:p-8 md:p-12 lg:p-20">
+    We harness the transformative power of Artificial Intelligence (AI) and Machine <span className="text-white"> Learning (ML)</span> to help businesses 
+    stay ahead in an ever-evolving digital landscape. Our AI/ML solutions are designed to <span className="text-white">automate processes</span>,
+     enhance decision-making, and unlock hidden opportunities within your data. From predictive analytics to natural
+     language processing and computer vision, we tailor our services to solve real-world challenges and <span className="text-white"> drive 
+     measurable results</span>.
+  </p>
 </div>
+<HorizontalLine/>
 
-<img src="/assets/images/aimlrobot.svg" alt="aiml" className='w-[700px] h-[698.6px] t-[12229px] l-[290px]'/>
-<div className="w-full flex items-start justify-start">
+<img 
+  src="/assets/images/aimlrobot.svg" 
+  alt="aiml" 
+  className="w-full max-w-[831px] h-auto sm:h-[500px] md:h-[685px] mx-auto mt-5"
+/>
+
+<div className="w-full flex flex-col sm:flex-row items-start justify-start gap-4 mt-6">
   <img
     src="/assets/images/aiml2.svg"
     alt="aiml2"
-    className="w-[502px] h-[376px]"
+    className="w-full max-w-[502px] h-auto sm:h-[300px] md:h-[376px]"
   />
 </div>
+
 
 <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 gap-[24px]">
   <h1 className="text-4xl md:text-6xl font-normal text-[45.56px] mb-16 text-center relative max-w-[800px] mx-auto">
@@ -166,7 +206,7 @@ const AimlServices = () => {
         <img
           src="/assets/images/line2.svg"
           alt="feature"
-          className="w-[136.68px] h-[58.89px]"
+          className="w-[136.68px] h-[58.89px] "
         />
       </div>
 
@@ -223,7 +263,11 @@ const AimlServices = () => {
   </div>
 </div>
 
-<img src="/assets/images/aitoy.svg" alt="aiml" className='w-[1015px] h-[659px] t-[13991px] l-[132px]'/>
+<img 
+  src="/assets/images/aitoy.svg" 
+  alt="aiml" 
+  className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] h-auto mx-auto"
+/>
 
 <div class="ml-10 mr-[auto] text-left p-6 sm:p-8 md:p-10">
   <h1 class="w-full text-[#4280EF] text-[16.62px] sm:text-[18px] md:text-[20px] font-semibold">
@@ -233,48 +277,62 @@ const AimlServices = () => {
     We Can Expect To Get From The <br />AI ML
   </h1>
 
-  <div class="w-full sm:w-auto md:w-[1225px] h-auto gap-[16.09px] mx-auto bg-black text-white p-6 mt-5">
-    <div class="flex flex-col items-center">
-
-      <div class="flex flex-wrap justify-between w-full mb-4 gap-[40px] sm:gap-8">
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Access To Cutting-<br />Edge <span class="text-orange-500"><br />Technology</span>
+  <div class="w-full sm:w-auto h-auto gap-[16.09px] mx-auto bg-black text-white p-6 mt-5">
+  <div class="flex flex-col items-center">
+    
+    <div class="flex flex-wrap justify-evenly w-full gap-[70px] sm:gap-[50px]">
+      
+      <div class="flex flex-col items-center flex-1">
+        <h3 class="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
+          Access To Cutting-<br />Edge <span class="text-orange-500">Technology</span>
         </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Data-Driven <span class="text-orange-500"><br />Decision Making</span>
-        </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Focus on Core <span class="text-orange-500"><br />Competencies</span>
-        </h3>
-        <h3 class="text-[24px] sm:text-[20px] md:text-[24px] font-normal text-center flex-1 mb-4 sm:mb-2">
-          Expert Digital <span class="text-orange-500"><br />Solutions</span>
-        </h3>
-      </div>
-
-      <hr class="w-full md:w-[1225px] h-[2px] border-t border-[#86868B] mb-4 mt-4" />
-
-      <div class="flex flex-wrap justify-between w-full gap-[109px] sm:gap-4">
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+        <hr class="w-full h-[2px] border-t border-[#86868B] my-4" />
+        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-center">
           We provide access to the<br />latest technologies, ensuring<br />your business stays ahead of<br />
           the competition with<br />innovative solutions that drive<br />growth and efficiency.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+      </div>
+
+      <div class="flex flex-col items-center flex-1">
+        <h3 class="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
+          Data-Driven <span class="text-orange-500">Decision Making</span>
+        </h3>
+        <hr class="w-full h-[2px] border-t border-[#86868B] my-4" />
+        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-center">
           Leverage data insights to<br />make informed, strategic<br />decisions that enhance your<br />
           operations, improve<br />performance, and maximize<br />ROI.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+      </div>
+
+      <div class="flex flex-col items-center flex-1">
+        <h3 class="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
+          Focus on Core <span class="text-orange-500">Competencies</span>
+        </h3>
+        <hr class="w-full h-[2px] border-t border-[#86868B] my-4" />
+        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-center">
           We enable your team to<br />concentrate on your core<br />strengths while we handle the<br />
           digital solutions that propel<br />your business forward.
         </p>
-        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-left flex-1 mb-4 sm:mb-2">
+      </div>
+
+      <div class="flex flex-col items-center flex-1">
+        <h3 class="text-[24px] sm:text-[20px] md:text-[20px] font-normal text-center mb-2">
+          Expert Digital <br/><span class="text-orange-500">Solutions</span>
+        </h3>
+        <hr class="w-full h-[2px] border-t border-[#86868B] my-4" />
+        <p class="text-[#86868B] text-[14.58px] sm:text-[12px] md:text-[14.58px] leading-[24.14px] text-center">
           Our team of skilled<br />professionals, with expertise<br />across various digital<br />disciplines,
           will help you<br />navigate the digital landscape<br />and achieve your business<br />objectives with
           tailored<br />solutions.
         </p>
       </div>
     </div>
+
   </div>
 </div>
+</div>
+<HorizontalLine />
+
     </>
   );
 };

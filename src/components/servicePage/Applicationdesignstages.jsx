@@ -186,15 +186,22 @@ return (
   </div>
 </div>
 
-<HorizontalLine />
+<div className="w-full flex justify-center">
+        {/* Adjust the width and padding */}
+        <div className="w-full max-w-screen-2xl mx-auto px-10 mt-80">
+          <hr className="border-[1px] border-gray-300" />
+        </div>
+      </div>
+
 
 {/* TRANSFORMATION */}
-<section className="bg-black text-white flex flex-col items-center p-20  relative h-auto sm:h-screen ">
+
+<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto md:h-auto lg:h-screen">
   {/* Background Glow */}
-  <div className="absolute  bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
-  <div className="relative z-10 w-full">
+  <div className="absolute bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
+  <div className="relative z-10 w-full flex flex-col md:flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-12 pb-40 md:pb-60">
     {/* Step 1 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:-top-9 md:right-44 lg:right-64 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+    <div className="flex flex-col items-center sm:items-start lg:absolute lg:-top-9 lg:right-64 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">01.</div>
       <img
         src="/assets/images/01page.svg"
@@ -207,7 +214,7 @@ return (
     </div>
 
     {/* Step 2 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[250px] md:-left-40 lg:-left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px] mb-6 md:mb-0">
+    <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[280px] lg:-left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">02.</div>
       <img
         src="/assets/images/02page.svg"
@@ -220,7 +227,7 @@ return (
     </div>
 
     {/* Step 3 */}
-    <div className="flex flex-col items-center sm:items-start md:absolute md:top-[480px] md:left-36 lg:left-52 gap-4 w-full sm:w-[380px] h-auto md:h-[482px] border-dotted border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
+    <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[560px] lg:left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">03.</div>
       <img
         src="/assets/images/03page.svg"
@@ -233,12 +240,7 @@ return (
     </div>
   </div>
 </section>
-
-
-
-
-
-
+<HorizontalLine/>
 
 {/*MOBILE DEVELOPMENT*/}
 

@@ -57,13 +57,14 @@ export default function ServiceMain(){
     </div>
   </div>
 
-  <p className="text-center text-white text-base sm:text-lg md:text-4xl p-6 sm:p-10 overflow-x-hidden relative leading-[45px] sm:leading-[70px] -mt-2">
-    We specialize in developing products that not only meet user needs but exceed their expectations.
-    With a perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, 
-    we craft solutions that people genuinely love to use. Our goal is to create experiences that are intuitive, 
-    engaging, and leave a lasting impression, ensuring that every product we deliver becomes an integral part of 
-    our users’ lives.
-  </p>
+  <p className="text-center text-white font-segoe font-light text-base sm:text-lg md:text-2xl lg:text-[28px] sm:p-10 overflow-x-hidden relative leading-[45px] sm:leading-[60px] lg:leading-[45px] pb-8 w-full lg:max-w-[1178px] mx-auto">
+  We specialize in developing products that not only meet user needs but exceed their expectations.
+  With a perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, 
+  we craft solutions that people genuinely love to use. Our goal is to create experiences that are intuitive, 
+  engaging, and leave a lasting impression, ensuring that every product we deliver becomes an integral part of 
+  our users’ lives.
+</p>
+
   
 
 

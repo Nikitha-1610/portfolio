@@ -42,9 +42,9 @@ const EmbeddedSystems = () => {
       </div>
       <div class="mt-4 flex justify-end">
         <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
-        </div>
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] rotate-[45deg] hidden group-hover:block" />
+          </div>
       </div>
     </div>
 
@@ -61,9 +61,9 @@ const EmbeddedSystems = () => {
       </div>
       <div class="mt-4 flex justify-end">
         <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
-        </div>
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] rotate-[45deg] hidden group-hover:block" />
+          </div>
       </div>
     </div>
 
@@ -80,9 +80,9 @@ const EmbeddedSystems = () => {
       </div>
       <div class="mt-4 flex justify-end">
         <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
-        </div>
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] rotate-[45deg] hidden group-hover:block" />
+          </div>
       </div>
     </div>
 
@@ -99,8 +99,8 @@ const EmbeddedSystems = () => {
       </div>
       <div class="mt-4 flex justify-end">
         <div class="w-[36px] h-[36px] flex items-center justify-center bg-[#fe5d26] group-hover:bg-white text-black rounded-full transition-colors duration-300">
-          <img src="/assets/images/add.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
-          <h1 class="  text-bold w-[15px] h-[15px] hidden group-hover:block " >X</h1>
+          <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] group-hover:hidden" />
+            <img src="/assets/images/cross.svg" alt="Add Icon" class="w-[15px] h-[15px] rotate-[45deg] hidden group-hover:block" />
         </div>
       </div>
     </div>

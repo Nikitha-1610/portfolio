@@ -80,7 +80,7 @@ return (
 
 
        {/* Mobile Application*/}
-       <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[150px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+       <div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px]  sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     In<span className="text-[#fe5d26] underline ml-2">M</span>obile Application
   </h1>
@@ -93,20 +93,19 @@ return (
 
 
   
-<div className="w-full flex flex-col justify-between sm:flex-row lg:gap-8">
+<div className="w-full flex flex-col justify-between sm:flex-row  lg:gap-10 md:gap-2">
   {/* Boxes Section */}
-  <div className="relative flex-col flex-wrap px-4 sm:px-6 ml-10 gap-2 sm:gap-3 md:gap-2 my-4 flex justify-between">
+  <div className="relative flex-col flex-wrap px-8 sm:px-6 ml-15 lg:ml-20  gap-8 lg:gap-12 my-4 flex justify-center"> 
     {boxes.map((box, index) => (
       <div
         key={index}
         className={`relative bg-transparent border border-orange-600 rounded-lg shadow-lg inline-flex items-center px-3 sm:px-4 gap-2`}
         style={{
-          boxShadow:
-            "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
-          width: 'fit-content', 
+          boxShadow: "8px 8px 4px 0px #FFFFFF40, 12px 12px 200px 0px #FFFFFF40",
+          width: 'fit-content',
         }}
       >
-        <span className="text-orange-600 text-[14px] sm:text-[20px] leading-[20px]  sm:leading-[41px]">
+        <span className="text-orange-600 text-[14px] lg:text-[20px] md:text-[16px] leading-[20px] lg:leading-[41px]">
           {box.title}
         </span>
         <span className="text-base sm:text-xl">{box.icon}</span>
@@ -115,7 +114,7 @@ return (
   </div>
 
   {/* Image Section */}
-  <div className="relative aspect-[4/3] lg:w-[60%] lg:h-[594px] ml-auto mr-0 sm:w-[80%] flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[20px] sm:mt-[30px]">
+  <div className="relative aspect-[4/3] lg:w-[60%] lg:h-[594px]  ml-auto mr-0 sm:w-[80%]  flex flex-col sm:flex-row items-center sm:items-end rounded-tl-[24px] rounded-bl-[24px] bg-[#1d1d1f] mt-[20px] sm:mt-[30px]">
     {/* Gradient Circle */}
     <div
       className="absolute 
@@ -138,6 +137,8 @@ return (
     </div>
   </div>
 </div>
+
+
         {/* Content Section */}
    <div className="bg-black text-white py-10 px-6 md:px-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-3">
@@ -178,7 +179,7 @@ return (
 
 {/*Web Application*/}
 
-<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[50px] md:mt-[60px] lg:mt-[50px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+<div className="flex gap-2 ml-0 mr-[auto] mt-4 sm:mt-[30px] md:mt-[40px] lg:mt-[30px] p-4 sm:p-6 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     In<span className="text-[#fe5d26] underline ml-2">W</span>eb Application
   </h1>
@@ -190,17 +191,19 @@ return (
 </div>
 
 <img
-  className="h-[60%] sm:h-[75%] md:h-[90%] lg:h-[95%] w-[80%] sm:w-[70%] md:w-[80%] lg:w-[85%] mx-auto mt-8 sm:mt-12 md:mt-16"
+  className="h-[60%] sm:h-[75%] md:h-[90%] lg:h-[95%] w-[80%] sm:w-[70%] md:w-[80%] lg:w-[85%] mx-auto sm:mt-8 md:mt-6 lg:-mt-8 "
   src='/assets/images/img4.png'
   alt="Web Application"
 />
 
 
 
-<div className="bg-black text-white py-10 px-4">
-  <h2 className="text-center text-3xl font-semibold mb-8">
-    <span className="text-orange-500 font-bold underline">T</span>ransform Your Digital Presence with Exceptional Website Design
-  </h2>
+
+<div className="bg-black text-white py-10 px-4 -mt-12">
+<h2 className="text-center text-[40px] sm:text-[20px] md:text-[30px] lg:text-[40px] font-segoe font-[600px] mb-6 sm:mb-4 md:mb-6 sm:p-2">
+  <span className="text-orange-500 font-bold underline">T</span>ransform Your Digital Presence with Exceptional Website Design
+</h2>
+
   <div className="flex flex-wrap justify-center items-center gap-4">
   {items.map((item, index) => (
     <div

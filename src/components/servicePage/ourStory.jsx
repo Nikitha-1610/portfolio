@@ -197,7 +197,7 @@ const ourStory = () => {
   {/*our story part 3 */}
   <div className="relative w-full h-[150vw] max-w-[400px] max-h-[300px] min-h-[150px] mx-auto my-[250px] flex items-center justify-center bg-black">
   <div className="absolute w-[600px] h-[600px] bg-[#616161] opacity-[7%] rounded-full "></div>
-  <div className="absolute w-[400px] h-[400px] bg-gradient-to-br from-[#fe5d26] to-blue-900 rounded-full blur-2xl opacity-75 "></div>
+  <div className="absolute w-[400px] h-[400px] bg-gradient-to-br from-[#fe5d26] to-blue-900 rounded-full blur-xl opacity-75 "></div>
   {generateDots()}
   <img
       src="/assets/images/ourStory/os4.svg"

@@ -158,7 +158,7 @@ return (
       {step.title}
     </h2>
     <hr className="border-t border-gray-500 border-[1px] w-full mt-2 mb-4 group-hover:border-[#fe5d26]" />
-    <p className="text-gray-500 text-xl text-start leading-7">
+    <p className="text-gray-500 text-xl text-start leading-8">
      {step.description}
     </p>
       </div>
@@ -167,7 +167,7 @@ return (
 
 
           
-    <p className="text-center text-gray-500 text-xl sm:text-xl md:text-2xl px-4 sm:px-8 md:px-5 leading-8 sm:leading-9 md:leading-10 max-w-[90%] sm:max-w-[full] md:max-w-full mx-auto mt-12 sm:mt-16 md:mt-10 p-6 sm:p-8 md:p-8">
+    <p className="text-center text-gray-500 text-xl sm:text-xl md:text-2xl px-4 sm:px-8 md:px-5 leading-10 sm:leading-9 md:leading-10 max-w-[90%] sm:max-w-[full] md:max-w-full mx-auto mt-12 sm:mt-16 md:mt-10 p-6 sm:p-8 md:p-8">
   We specialize in developing products that not only meet user needs but exceed their expectations. With a
   perfect balance of cutting-edge technology, thoughtful design, and unmatched functionality, we craft
   solutions that people genuinely love to use. Our goal is to create experiences that are intuitive,
@@ -208,24 +208,24 @@ return (
   {items.map((item, index) => (
     <div
       key={index}
-      className="w-full sm:w-[48%] lg:w-[23%] h-[134px] flex items-center text-left-[20px] justify-between gap-2 px-4 py-2 border-2 border-gray-600 
+      className="w-full sm:w-[48%] lg:w-[23%] h-[134px] flex items-center text-left-[20px] justify-between gap-3 px-4 py-2 border-2 border-gray-600 
                 rounded-3xl group hover:border-blue-500 transition-transform duration-300"
     >
       {/* Text */}
     
       <span 
-  className="text-lg sm:text-[24px] lg:text-2xl  text-[#86868b] font-medium 
+  className="text-lg sm:text-[24px] lg:text-xl  text-[#86868b] font-medium 
              group-hover:text-blue-500 group-hover:scale-110 group-hover:font-normal group-hover:text-2xl
-             group-active:scale-150 transition-transform duration-500 ease-out "
+             group-active:scale-150 transition-transform duration-700 ease-out "
 >
   {index + 1}. {item}
 </span>
 
       {/* Arrow */}
-      <span className="text-2xl sm:text-3xl text-[#86868b] rounded-lg transform transition-transform duration-700 
+      <span className="text-2xl rotate-[90deg] sm:text-3xl text-[#86868b] rounded-lg transform transition-transform duration-700 
                        group-hover:text-blue-500  group-hover:translate-y-[-10px] sm:group-hover:translate-y-[-20px] lg:group-hover:translate-y-[-40px] 
-                       group-hover:rotate-[-90deg]">
-         ▶
+                       group-hover:rotate-[-1deg]">
+         ▲
       </span>
     </div>
   ))}

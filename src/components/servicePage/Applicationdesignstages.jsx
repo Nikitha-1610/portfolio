@@ -42,7 +42,6 @@ const DesignStages = () => {
   const HorizontalLine = () => {
     return (
       <div className="w-full flex justify-center">
-        {/* Adjust the width and padding */}
         <div className="w-full max-w-screen-2xl mx-auto px-10">
           <hr className="border-[1px] border-gray-300" />
         </div>
@@ -87,6 +86,7 @@ return (
 {/*Development Services*/}
 
 <HorizontalLine />
+
 
 <div className="bg-black text-white py-10">
   <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-semibold w-[90%] max-w-[724px] h-auto m-auto text-center">
@@ -186,12 +186,12 @@ return (
   </div>
 </div>
 
-<HorizontalLine/>
 
 
 {/* TRANSFORMATION */}
 
-<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto md:h-auto lg:h-screen">
+<HorizontalLine/>
+<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto md:h-auto lg:h-[1100px]">
   {/* Background Glow */}
   <div className="absolute bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
   <div className="relative z-10 w-full flex flex-col md:flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-12 pb-40 md:pb-60">
@@ -235,11 +235,12 @@ return (
     </div>
   </div>
 </section>
-<HorizontalLine/>
+
 
 {/*MOBILE DEVELOPMENT*/}
 
-<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[350px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+<HorizontalLine/>
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[50px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     <span className="text-[#fe5d26] underline ml-2">M</span>obile Development
   </h1>

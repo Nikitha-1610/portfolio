@@ -60,7 +60,7 @@ return (
 </h1>
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 p-6 sm:p-12 lg:p-20">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 p-6 sm:p-12 lg:p-20 group">
   {[
     { src: "/assets/images/1.svg", alt: "Analysis", title: "Analysis" },
     { src: "/assets/images/2.svg", alt: "Design", title: "Design" },
@@ -71,14 +71,26 @@ return (
   ].map((item, index) => (
     <div
       key={index}
-      className="bg-black border-neutral-400 text-center w-full sm:w-[220px] h-auto border-[0.5px] p-4 sm:p-[12px] gap-4"
+      className={`bg-black border-neutral-400 text-center w-full sm:w-[220px] h-auto border-[0.5px] p-4 sm:p-[12px] gap-4 transform transition-transform duration-500 ${
+        index === 0 || index === 2
+          ? "group-hover:translate-y-[-30px]" 
+          : index === 1
+          ? "group-hover:translate-y-[-60px]" 
+          : index === 3 || index === 5
+          ? "group-hover:translate-y-[30px]" 
+          : index === 4
+          ? "group-hover:translate-y-[60px]" 
+          : ""
+      } group-hover:scale-135 group-hover:scale-135`} 
     >
       <img
         src={item.src}
         alt={item.alt}
-        className="w-[150px] sm:w-[200px] h-auto mx-auto"
+        className="w-[150px] sm:w-[200px] h-auto mx-auto transition-transform duration-500 group-hover:scale-140"
       />
-      <p className="font-bold text-lg sm:text-xl mt-4 text-white">{item.title}</p>
+      <p className="font-bold text-lg sm:text-xl mt-4 text-white transition-transform duration-500 group-hover:scale-140">
+        {item.title}
+      </p>
     </div>
   ))}
 </div>
@@ -188,6 +200,9 @@ return (
 
 
 
+
+
+
 {/* TRANSFORMATION */}
 
 <HorizontalLine/>
@@ -240,7 +255,7 @@ return (
 {/*MOBILE DEVELOPMENT*/}
 
 <HorizontalLine/>
-<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[100px] md:mt-[120px] lg:mt-[50px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
+<div className="flex gap-2 ml-0 mr-[auto] mt-8 sm:mt-[30px] md:mt-[15px] lg:mt-[50px] p-4 sm:p-6 md:p-10 w-full sm:w-[375px] md:w-[450px] lg:w-[600px] h-auto">
   <h1 className="text-xl sm:text-2xl md:text-[32px] lg:text-[36px] font-bold text-white flex">
     <span className="text-[#fe5d26] underline ml-2">M</span>obile Development
   </h1>

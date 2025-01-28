@@ -206,9 +206,20 @@ return (
 {/* TRANSFORMATION */}
 
 <HorizontalLine/>
+
 <section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto md:h-auto lg:h-[1100px]">
-  {/* Background Glow */}
-  <div className="absolute bg-gradient-to-r from-[#fe5d26] via-[#ff5d26] to-transparent blur-[150px]"></div>
+  {/* Semicircle Gradient Background */}
+  <div
+    className="absolute right-0 top-0 h-full w-[500px]"
+    style={{
+      background: "radial-gradient(circle at left, rgba(254, 93, 38, 0.8), transparent 70%)",
+      borderTopLeftRadius: "250px",
+      borderBottomLeftRadius: "250px",
+      zIndex: "-10",
+    }}
+  ></div>
+
+  {/* Content */}
   <div className="relative z-10 w-full flex flex-col md:flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-12 pb-40 md:pb-60">
     {/* Step 1 */}
     <div className="flex flex-col items-center sm:items-start lg:absolute lg:-top-9 lg:right-64 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
@@ -223,8 +234,8 @@ return (
       </p>
     </div>
 
-    {/* Step 2 */}
-    <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[280px] lg:-left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
+  {/* Step 2 */}
+  <div className="flex flex-col items-center sm:items-start lg:absolute lg:top-[280px] lg:-left-52 gap-4 w-full sm:w-[380px] h-auto border-dashed border-[2px] border-[#86868B] rounded-[12px] p-[16px]">
       <div className="text-[40px] font-bold text-gray-400 mb-[8px]">02.</div>
       <img
         src="/assets/images/02page.svg"
@@ -248,6 +259,7 @@ return (
         Rigorous testing ensures a flawless product, followed by seamless deployment to make your solution ready for the world.
       </p>
     </div>
+  
   </div>
 </section>
 

@@ -207,7 +207,7 @@ return (
 
 <HorizontalLine/>
 
-<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto md:h-auto lg:h-[1100px]">
+<section className="bg-black text-white flex flex-col items-center p-20 relative h-auto sm:h-auto  md:h-auto lg:h-[1100px]">
   {/* Semicircle Gradient Background */}
   <div
     className="absolute right-0 top-0 h-full w-[500px]"

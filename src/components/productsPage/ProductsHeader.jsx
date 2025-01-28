@@ -11,16 +11,15 @@ function ProductsHeader() {
       </p>
       <div className="flex justify-center  mb-0">
         <img
-          src={obj}
+          src="/public/obj1.svg"
           alt="3D Object"
-          className="w-auto  h-40 md:h-60 lg:h-96 my-16"
+          className="w-auto  h-40 md:h-60 lg:h-96 my-5"
         />
       </div>
       <div className="flex justify-center">
         <p className="text-base sm:text-lg md:text-xl lg:text-[28px] font-normal lg:leading-[45px] lg:w-3/4 mx-3 lg:mx-0 tracking-wide my-10 text-gray-400">
-          Our products are designed to empower businesses across industries. Whether you're managing
-          <span className="text-white">
-            textiles, healthcare, logistics, or poultry, our solutions simplify operations,
+          Our products are designed to empower businesses across industries. Whether you're managing 
+          <span className="text-white"> textiles, healthcare, logistics, or poultry, our solutions simplify operations,
           </span>
           enhance user experiences, and drive efficiency. Combining advanced features with intuitive design, our web and mobile applications cater to the unique needs of modern enterprises.
         </p>

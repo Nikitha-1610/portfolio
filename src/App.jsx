@@ -1,28 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomeMain from "./components/homePage/homeMain"
-import ProductsMain from "./components/productsPage/productsMain";
-import CareerMain from './components/careerPage/careerMain';
-import ApplicationMain from './components/applicationPage/applicationMain';
-import ContactMain from './components/contactPage/contactMain';
-import ScrollToTop from './components/ScrollToTop';
-import ServiceMain from "./components/servicePage/ServiceMain"
-export default function App() {
+import React from "react";
+
+const App = () => {
   return (
-    <>
-      <div className='bg-black'>
-        <Router>
-          <ScrollToTop />
-          <Routes>
-          <Route path="/" element={<HomeMain />} />
-            <Route path="/product" element={<ProductsMain />} /> 
-            <Route path="/career" element={<CareerMain />} />
-            <Route path="/service" element={<ServiceMain />} />
-            <Route path="/contact" element={<ContactMain />} />
-            <Route path="/application" element={<ApplicationMain />} />
-          </Routes>
-        </Router>
-      </div>
-    </>
+    <div className="flex items-center justify-center h-screen bg-gray-900 text-white">
+      <h1 className="text-4xl font-bold text-blue-500">Hello, React + Tailwind CSS!</h1>
+    </div>
   );
-}
+};
+
+export default App;
+

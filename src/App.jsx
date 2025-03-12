@@ -52,7 +52,7 @@ const Port = () => {
     {/* Profile Image - Appears at Top on Mobile */}
     <div className=" w-60 h-60 sm:w-56 sm:h-56 md:w-80 md:h-80 md:flex-shrink-0 mx-auto md:mx-0 group justify-end">
       <img
-        src="/src/images/pic.jpg"
+        src="/pic.jpg"
         alt="Your Profile"
         className=" border-8 border-[#94B49F] w-fit h-fit rounded-full lg:ml-36 shadow-lg transition-transform transform group-hover:scale-105 duration-300"
       />

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Port = () => {
   return (
-    <div className="bg-[#FCF8E8]">
+    <div className="bg-[#FCF8E8] mx-auto w-full">
       {/* Header Section */}
       <header className="bg-[#94B49F] text-black py-10 shadow-md">
         <nav className="container mx-auto flex justify-center">
@@ -46,12 +46,12 @@ const Port = () => {
       </header>
 
 {/* Hero Section */}
-<section id="about" className="container mx-auto px-6 py-20 min-h-screen flex flex-col md:flex-row items-center md:gap-x-12">
+<section id="about" className="container mx-auto px-6 py-20 min-h-screen flex flex-col md:flex-row items-center justify-center md:gap-x-12">
   <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between space-y-6 md:space-y-0">
     
     {/* Profile Image - Appears at Top on Mobile */}
-    <div className=" w-60 h-60 sm:w-56 sm:h-56 md:w-80 md:h-80 md:flex-shrink-0 mx-auto md:mx-0 group justify-end">
-      <img
+    <div className="w-60 h-60 sm:w-45 sm:h-45 md:w-80 md:h-80 md:flex-shrink-0 mx-auto md:mx-auto group flex justify-center">
+    <img
         src="/pic.jpg"
         alt="Your Profile"
         className=" border-8 border-[#94B49F] w-fit h-fit rounded-full lg:ml-36 shadow-lg transition-transform transform group-hover:scale-105 duration-300"
@@ -59,8 +59,8 @@ const Port = () => {
     </div>
 
     {/* Text Content - Appears Below Image on Mobile */}
-    <div className="max-w-2xl space-y-6 text-center  md:text-left">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+    <div className="max-w-2xl space-y-6 text-center md:text-left ">
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 ">
         Hii, I'm Nikitha
       </h1>
       <h2 className="text-2xl md:text-3xl text-gray-700">
@@ -90,7 +90,7 @@ const Port = () => {
 
       {/* Skills Section */}
       
-      <section id="skills" className="container mx-auto px-6 py-10 lg:pt-25">
+      <section id="skills" className="container mx-auto px-6 py-10 lg:pt-25 text-center">
       <h2 className="text-4xl md:text-4xl font-bold text-center text-gray-900 mb-16">
           Technical Skills
         </h2>
@@ -151,8 +151,8 @@ const Port = () => {
 
       {/* Contact Section */}
       <footer id="contact" className="bg-[#94B49F] text-black py-6 mt-16">
-        <div className="container mx-auto text-center space-y-4">
-          <h2 className="text-2xl font-semibold">Contact Me</h2>
+      <div className="container mx-auto text-center space-y-4 flex flex-col items-center">
+      <h2 className="text-2xl font-semibold">Contact Me</h2>
           <div className="flex justify-center space-x-6 mt-4">
             <a href="mailto:nikithamohan1610@gmail.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-[#FAEED1] hover:scale-110 transition duration-300">
               <FaEnvelope />

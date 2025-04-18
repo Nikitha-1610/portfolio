@@ -98,7 +98,7 @@ const Port = () => {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Languages */}
-          <div className="w-[575px] bg-[#CEE5D0] border-4 border-[#94B49F] shadow-lg p-6 rounded-lg transition duration-300 hover:shadow-xl hover:scale-105">
+          <div className="w-[575px] bg-[#CEE5D0] border-4 border-[#94B49F] shadow-lg p-6 rounded-lg justify-center transition duration-300 hover:shadow-xl hover:scale-105">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Languages</h3>
             <ul className="space-y-3 text-lg text-gray-700">
               <li className="flex items-center gap-2">
